@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: url("images/pattern-background-desktop.svg")  no-repeat;
+    background-color: rgb(232, 230, 251) ;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* .attribution {
+    margin-top: auto;
+} */
+
+.header img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 650px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+h1 {
+    align-self: center;
+}
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+span {
+    padding: 0;
+}
+#price {
+    margin: auto 20px;
+}
+h1,h3 {
+    color: hsl(223, 47%, 23%);
+}
+
+p {
+    text-align: center;
+    width: 300px;
+    align-self: center;
+}
+
+.plan {
+    background: rgb(235, 235, 235);
+    border-radius: 10px;
+    height: 70px;
+    width: 350px;
+    align-self: center;
+}
+
+div .plan {
+    display: flex;
+}
+
+#change {
+    margin: auto 30px auto auto;
+    height: 30px;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#change:hover {
+    color:  hsl(224, 23%, 55%);
+}
+
+.plan img {
+    height: 50px;
+    width: 50px;
+    margin: auto 0 auto 10px;
+}
+
+#proceed {
+    width: 350px;
+    height: 40px;
+    margin: 35px auto;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    box-shadow: 0 7px 20px  rgb(150, 127, 214);
+}
+
+#proceed:hover {
+    background-color: hsl(225, 90%, 60%);
+}
+
+#cancel {
+    width: 200px;
+    margin: 10px auto;
+    background-color: #fff;
+    border: none;
+    color: hsl(223, 47%, 23%);
+    font-weight: bold;
+}
+
+#cancel:hover {
+    color: hsl(224, 23%, 55%);
+}
+
+div .header {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 300px;
+        height: 550px;
+    }
+    .plan {
+        height: 70px;
+        width: 250px;
+    }
+    #change {
+        margin: auto 20px auto auto;
+        font-size: 90%;
+    }
+    #proceed {
+        width: 250px;
+    }
+    #cancel {
+        margin: 10px auto;
+    }
+    .header img {
+       width: 100%;
+    }
+    p {
+        width: 250px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    span {
+        font-size: 13px;
+    }
+}
